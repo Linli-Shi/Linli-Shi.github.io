@@ -12,11 +12,11 @@ a:hover, a:active { outline: 0px none; }
 img { height: auto; max-width: 100%; vertical-align: middle; border: 0px none; }
 button::-moz-focus-inner, input::-moz-focus-inner { padding: 0px; border: 0px none; }
 
-body { margin: 0px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 16px; line-height: 23px; color: rgb(51, 51, 51); 
-    background-color: rgb(255, 255, 255); }
+body { margin: 0px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 16px; line-height: 23px; color: rgb(9, 8, 8); 
+    background-color: #c9e8d8; }
 
-a { color: rgb(0, 136, 204); text-decoration: none; }
-a:hover, a:focus { color: rgb(0, 85, 128); text-decoration: underline; }
+a { color: rgb(165, 2, 2); text-decoration: none; }
+a:hover, a:focus { color: rgb(51, 51, 51); text-decoration: underline; }
 .row { margin-left: -20px; }
 .row:before, .row:after { display: table; line-height: 0; content: ""; }
 .row:after { clear: both; }
@@ -66,10 +66,10 @@ tr.spacer td {padding-top: 10px;}
     height: 140px;	
 	margin: 0; 
 	padding: 0;
-    background: -webkit-linear-gradient(#94A7E3, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#94A7E3, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#94A7E3, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#94A7E3, white); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(#94e3ba, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#94e3ba, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#94e3ba, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#94e3ba, white); /* Standard syntax (must be last) */
 }
 
 #uc-site-header { padding-bottom: 15px; padding-top: 30px;  }
@@ -144,7 +144,7 @@ tr.spacer td {padding-top: 10px;}
 }
 #nav li:hover ul li a:hover{    
 	color: rgb(51, 51, 51); 
-	background-color: #94A7E3;
+	background-color: #94e3ba;
 }
 
 /*
@@ -158,10 +158,10 @@ table.papers {
 }
 
 table.papers tr {
-    background: -webkit-linear-gradient(#EAEDF9, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#EAEDF9, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#EAEDF9, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#DFE5F8, white); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(#94e3ba, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#94e3ba, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#94e3ba, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#94e3ba, white); /* Standard syntax (must be last) */
   padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
