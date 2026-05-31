@@ -1,117 +1,704 @@
 <!DOCTYPE html>
-<html>
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Linli Shi's Home Page</title>
-        
-        <link rel="stylesheet" type="text/css" href="gg.css">    
-    </head>
-	
-    <script type="text/javascript">
-      function toggle(abs_tr) {
-        var e = document.getElementById('abs-'+abs_tr);
-        document.status = e.style.display;
-        if(e.style.display == 'none') {
-          e.style.display = 'table-row';
-        } else {
-          e.style.display = 'none';
-        }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected talks, seminars, conferences, and workshops of Linli Shi.">
+  <title>Linli Shi | Talks</title>
+  <style>
+
+    :root {
+      --bg: #f6f8f8;
+      --paper: #ffffff;
+      --ink: #1f2933;
+      --muted: #66747d;
+      --line: #d9e1e3;
+      --accent: #426a73;
+      --accent-dark: #2d535c;
+      --accent-soft: #edf4f5;
+      --accent-softer: #f5f9fa;
+      --shadow: 0 18px 42px rgba(31, 41, 51, 0.08);
+      --radius: 18px;
+      --max-width: 1040px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.62;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(66, 106, 115, 0.25);
+      transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease;
+    }
+
+    a:hover,
+    a:focus {
+      color: #1e4148;
+      border-bottom-color: rgba(66, 106, 115, 0.65);
+    }
+
+    .site-header {
+      background: linear-gradient(180deg, #ffffff 0%, #f7fafb 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner,
+    .main,
+    .footer-inner {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .header-inner { padding: 34px 0 20px; }
+
+    .topline {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .name {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.2rem, 5vw, 3.55rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .chinese-name {
+      color: var(--muted);
+      font-size: 0.62em;
+      letter-spacing: 0;
+      margin-left: 0.22em;
+      white-space: nowrap;
+    }
+
+    .title-block {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .title-block strong {
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    .affiliation-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .quick-contact {
+      text-align: right;
+      color: var(--muted);
+      font-size: 0.96rem;
+      min-width: 245px;
+      padding-top: 6px;
+    }
+
+    .quick-contact div { margin-bottom: 4px; }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+      padding-top: 17px;
+      border-top: 1px solid var(--line);
+    }
+
+    .nav a,
+    .nav span {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+      background: transparent;
+    }
+
+    .nav a { border-bottom: 1px solid transparent; }
+
+    .nav a:hover,
+    .nav a:focus {
+      background: var(--accent-soft);
+      border-color: rgba(66, 106, 115, 0.14);
+      text-decoration: none;
+    }
+
+    .nav .active {
+      color: #ffffff;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .main { padding: 34px 0 42px; }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 285px;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .intro-card,
+    .page-card,
+    .section { padding: 30px; }
+
+    .intro-card p,
+    .page-card p,
+    .section p { margin: 0 0 16px; }
+
+    .intro-card p:last-child,
+    .page-card p:last-child,
+    .section p:last-child { margin-bottom: 0; }
+
+    .lead {
+      font-size: 1.05rem;
+      color: #26323a;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 8px 15px;
+      border-radius: 999px;
+      border: 1px solid rgba(66, 106, 115, 0.24);
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      font-weight: 650;
+      font-size: 0.94rem;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+
+    .button:hover,
+    .button:focus {
+      text-decoration: none;
+      border-color: rgba(66, 106, 115, 0.55);
+      background: #e2eef0;
+    }
+
+    .button.primary:hover,
+    .button.primary:focus {
+      background: var(--accent-dark);
+      color: #ffffff;
+    }
+
+    .side-card {
+      padding: 18px;
+      text-align: center;
+    }
+
+    .portrait {
+      width: 100%;
+      max-width: 245px;
+      border-radius: 15px;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 24px rgba(31, 41, 51, 0.10);
+      background: var(--accent-softer);
+    }
+
+    .side-card .caption {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    .info-list {
+      margin: 18px 0 0;
+      padding: 16px 0 0;
+      border-top: 1px solid var(--line);
+      text-align: left;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.5;
+    }
+
+    .info-list div + div { margin-top: 8px; }
+
+    .page-card { margin-bottom: 28px; }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .page-title {
+      margin: 0 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.35rem);
+      line-height: 1.15;
+      color: var(--ink);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    .section {
+      margin-top: 28px;
+      padding: 26px 30px 28px;
+    }
+
+    .section:first-child { margin-top: 0; }
+
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--accent-dark);
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    .section-heading::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid var(--line);
+      transform: translateY(-5px);
+    }
+
+    .research-tags,
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--accent-softer);
+      border: 1px solid var(--line);
+      color: var(--accent-dark);
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .item-list,
+    .event-list,
+    .course-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .item,
+    .event,
+    .course-row {
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .item:first-child,
+    .event:first-child,
+    .course-row:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .item:last-child,
+    .event:last-child,
+    .course-row:last-child { padding-bottom: 0; }
+
+    .item-title,
+    .event-title,
+    .course-title {
+      font-weight: 720;
+      color: var(--ink);
+    }
+
+    .item-meta,
+    .event-meta,
+    .course-meta {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .publication-title {
+      margin: 0 0 6px;
+      font-size: 1.12rem;
+      line-height: 1.35;
+      font-weight: 720;
+      color: var(--ink);
+    }
+
+    .publication-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 13px;
+    }
+
+    details {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--accent-softer);
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--accent-dark);
+      font-weight: 700;
+    }
+
+    details p {
+      margin-top: 12px;
+      color: #39464e;
+    }
+
+    .two-column,
+    .theme-grid,
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .mini-card,
+    .theme-card,
+    .profile-card {
+      background: var(--accent-softer);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .mini-card h3,
+    .theme-card h3,
+    .profile-card h3 {
+      margin: 0 0 9px;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+
+    .mini-card p,
+    .theme-card p,
+    .profile-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .event {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 18px;
+    }
+
+    .event-date {
+      color: var(--accent-dark);
+      font-size: 0.92rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .course-row {
+      display: grid;
+      grid-template-columns: 125px minmax(0, 1fr);
+      gap: 18px;
+    }
+
+    .course-date {
+      color: var(--accent-dark);
+      font-size: 0.92rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .note-box {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--accent-softer);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .footer-inner {
+      padding: 18px 0 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 820px) {
+      .topline,
+      .footer-inner { display: block; }
+
+      .quick-contact {
+        text-align: left;
+        min-width: 0;
+        margin-top: 18px;
       }
-  </script>
-  
-  <body>
-  <div id="gg-header">
-    <div class="container">
-            
-        <div id="uc-site-header">
-            <h1 id="uc-site-title" class="clearfix">Linli Shi (师林立)</h1>
-             <h3 id="uc-site-parent" class="clearfix"><a href="https://math.ethz.ch/" target="new">Department of Mathematics</a>, <a href="https://math.ethz.ch/" target="new">ETH Zürich</a></h3>        
+
+      .hero,
+      .two-column,
+      .theme-grid,
+      .profile-grid,
+      .event,
+      .course-row {
+        grid-template-columns: 1fr;
+      }
+
+      .event,
+      .course-row { gap: 5px; }
+
+      .side-card { text-align: left; }
+
+      .portrait { max-width: 220px; }
+    }
+
+    @media (max-width: 560px) {
+      .header-inner,
+      .main,
+      .footer-inner {
+        width: min(var(--max-width), calc(100% - 26px));
+      }
+
+      .intro-card,
+      .page-card,
+      .section { padding: 22px; }
+
+      .nav { gap: 8px; }
+
+      .nav a,
+      .nav span,
+      .button { font-size: 0.88rem; }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="topline">
+        <div>
+          <h1 class="name">Linli Shi <span class="chinese-name">师林立</span></h1>
+          <div class="title-block">
+            <strong>Postdoctoral Researcher</strong><br>
+            Department of Mathematics, ETH Zürich<br>
+            <span class="affiliation-note">ETH Zürich and UniDistance Suisse</span>
+          </div>
         </div>
+        <div class="quick-contact" aria-label="Quick contact information">
+          <div><a href="mailto:linli.shi@math.ethz.ch">linli.shi@math.ethz.ch</a></div>
+          <div><a href="https://linli-shi.github.io/index.htm">linli-shi.github.io</a></div>
+          <div>Zürich, Switzerland</div>
+        </div>
+      </div>
 
-        <ul id="nav">
-            <li>
-              <a href="index.htm">Home</a>
-            </li>
-                
-            <li>
-                <a href="papers.htm">Papers</a>
-            </li>
-            <li>
-                <a href="files/CV.pdf">CV</a>
-            </li>
-            <li>
-                <a href="research.htm">Research</a>        
-            </li>
-            <li>
-                <a href="teaching.htm">Teaching</a>
-            </li>
-            <li>   
-                <font color = "purple">Talks</font>
-            </li>
-        </ul>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.htm">Home</a>
+        <a href="papers.htm">Papers</a>
+        <a href="research.htm">Research</a>
+        <span class="active">Talks</span>
+        <a href="teaching.htm">Teaching</a>
+        <a href="files/CV.pdf">CV</a>
+      </nav>
     </div>
-  </div>
-  
-  <div id="gg-content">
-	<div class="container">	
-    <p> 
-      <h3>Invited Seminar Talks </h3>
-      <ul>
-          <li>
-            <a href="https://calendar.google.com/calendar/u/0/embed?src=umn.edu_m286fu0qmtarvfgn71cl1nbdps@group.calendar.google.com&ctz=America/Indiana/Indianapolis">Regularized periods of some Eisenstein series</a>, 
-            Purdue University, Automorphic Forms and
-            Representation Theory Seminar, January 16, 2025. 
-          </li>
-          <li>
-            On higher regulators of Picard modular surfaces, UniDistance Suisse, Number Theory Seminar (Online), December 10, 2024.
-          </li>
-          <li>
-            <a href="https://people.clas.ufl.edu/jeremybooher/seminar/">On higher regulators of Picard modular surfaces</a>, University of Florida, Algebra Seminar, December 3, 2024.
-          </li>
-          <li>
-            <a href="https://mathweb.ucsd.edu/~nts/cgi-bin/nts.cgi">On higher regulators of Picard modular surfaces</a>, UC San Diego, Number Theory Seminar, November 20, 2024.
-          </li>
-          <li>
-            <a href="https://math.bu.edu/research/algebra/seminar.html">On higher regulators of Picard modular surfaces</a>, Boston University, Number Theory Seminar, November 18, 2024. 
-          </li>
-          <li>
-            <a href="https://www.math.lsu.edu/calendar?selecttime=all_future&selectevent=Algebra+and+Number+Theory+Seminar">On higher regulators of Picard modular surfaces</a>, Louisiana State University, Algebra
-            and Number Theory Seminar (Online), November 5, 2024.
-          </li>
-          <li>
-            <a href="https://sites.google.com/math.arizona.edu/panyan/algebra-and-number-theory-seminar">On higher regulators of Picard modular surfaces</a>, University of Arizona, Algebra and Number Theory Seminar, 
-            October 15, 2024.
-          </li>
-          <li>
-            <a href="https://events.uconn.edu/mathematics-department/event/241404-algebra-seminar-regularized-periods-of-some">Regularized periods of some Eisenstein series</a>, 
-            University of Connecticut, Algebra Seminar, September 18, 2024. 
-          </li>
-          <li><a href="https://events.uconn.edu/mathematics-department/event/166133-algebra-seminar-on-higher-regulators-of-pic">On higher regulators 
-            of Picard modular surfaces</a>, University of Connecticut, Algebra Seminar, September 4, 2024. 
-          </li>
-      </ul>
+  </header>
 
-  </p>
-  <p>
-      <h3>Conference Talks </h3>
-      <ul>
-        <li>
-          <b>Graduate Research Forum, University of Connecticut, January 25, 2025 </b> <br>
-          On higher regulators of Picard modular surfaces. 
+  <main class="main">
+    <section class="card page-card" aria-labelledby="page-heading">
+      <p class="eyebrow">Talks</p>
+      <h2 class="page-title" id="page-heading">Talks and academic activities</h2>
+      <p class="lead">
+        This page lists selected invited seminars, conference talks, and recent workshops connected to my research in number theory, automorphic forms, and arithmetic geometry.
+      </p>
+    </section>
+
+    <section class="card section" aria-labelledby="invited-heading">
+      <div class="section-heading">
+        <h2 id="invited-heading">Invited Seminar Talks</h2>
+      </div>
+      <ul class="event-list">
+        <li class="event">
+          <div class="event-date">Jan 16, 2025</div>
+          <div>
+            <div class="event-title"><a href="https://calendar.google.com/calendar/u/0/embed?src=umn.edu_m286fu0qmtarvfgn71cl1nbdps@group.calendar.google.com&amp;ctz=America/Indiana/Indianapolis" target="_blank" rel="noopener noreferrer">Regularized periods of some Eisenstein series</a></div>
+            <div class="event-meta">Automorphic Forms and Representation Theory Seminar, Purdue University.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Dec 3, 2024</div>
+          <div>
+            <div class="event-title"><a href="https://people.clas.ufl.edu/jeremybooher/seminar/" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
+            <div class="event-meta">Algebra Seminar, University of Florida.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Nov 20, 2024</div>
+          <div>
+            <div class="event-title"><a href="https://mathweb.ucsd.edu/~nts/cgi-bin/nts.cgi" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
+            <div class="event-meta">Number Theory Seminar, UC San Diego.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Nov 18, 2024</div>
+          <div>
+            <div class="event-title"><a href="https://math.bu.edu/research/algebra/seminar.html" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
+            <div class="event-meta">Number Theory Seminar, Boston University.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Nov 5, 2024</div>
+          <div>
+            <div class="event-title"><a href="https://www.math.lsu.edu/calendar?selecttime=all_future&amp;selectevent=Algebra+and+Number+Theory+Seminar" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
+            <div class="event-meta">Algebra and Number Theory Seminar, Louisiana State University. Online.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Oct 15, 2024</div>
+          <div>
+            <div class="event-title"><a href="https://sites.google.com/math.arizona.edu/panyan/algebra-and-number-theory-seminar" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
+            <div class="event-meta">Algebra and Number Theory Seminar, University of Arizona.</div>
+          </div>
         </li>
       </ul>
-      <ul>
-          <li>
-            <b>Joint Mathematics Meetings 2025 (Seattle, WA)</b><br>
-            <a href = "https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Paper/42800">On higher regulators of Picard modular surfaces</a> - 
-            Talk at Special session on ``L-functions, Automorphic Forms, and Their Applications".  January 8-11, 2025.
-          </li>
-      </ul>
-  </p>
-      
-      <div class="post-date">Last updated on: September 2025</div>
-</div>
-</div>
-  
+    </section>
 
+    <section class="card section" aria-labelledby="conference-heading">
+      <div class="section-heading">
+        <h2 id="conference-heading">Conference Talks</h2>
+      </div>
+      <ul class="event-list">
+        <li class="event">
+          <div class="event-date">Jan 8--11, 2025</div>
+          <div>
+            <div class="event-title"><a href="https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Paper/42800" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
+            <div class="event-meta">Special Session on ``L-functions, Automorphic Forms, and Their Applications,'' Joint Mathematics Meetings 2025, Seattle.</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card section" aria-labelledby="workshops-heading">
+      <div class="section-heading">
+        <h2 id="workshops-heading">Selected Conferences and Workshops</h2>
+      </div>
+      <ul class="event-list">
+        <li class="event">
+          <div class="event-date">Jul 13--18, 2026</div>
+          <div>
+            <div class="event-title"><a href="https://www.nisyrosmathconference.org/" target="_blank" rel="noopener noreferrer">Conference on Euler Systems</a></div>
+            <div class="event-meta">Nisyros.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Jun 8--12, 2026</div>
+          <div>
+            <div class="event-title"><a href="https://conferences.cirm-math.fr/3417.html" target="_blank" rel="noopener noreferrer">Classical and p-adic aspects of the Kudla program</a></div>
+            <div class="event-meta">CIRM, Marseille.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Sep 22--26, 2025</div>
+          <div>
+            <div class="event-title"><a href="https://l-values-2025.esaga.net/" target="_blank" rel="noopener noreferrer">Motives, L-values and Eisenstein series</a></div>
+            <div class="event-meta">Regensburg.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Jun 5--8, 2023</div>
+          <div>
+            <div class="event-title"><a href="https://www.math.cuhk.edu.hk/conference/aag2023/" target="_blank" rel="noopener noreferrer">Arithmetic Algebraic Geometry, in honor of Shouwu Zhang's 60th birthday</a></div>
+            <div class="event-meta">Chinese University of Hong Kong.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Mar 6--10, 2023</div>
+          <div>
+            <div class="event-title"><a href="https://www.mpim-bonn.mpg.de/node/11596" target="_blank" rel="noopener noreferrer">Motives and Automorphic Forms in Honour of Günter Harder's 85th Birthday</a></div>
+            <div class="event-meta">Max Planck Institute for Mathematics, Bonn.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">May 27--Jun 14, 2019</div>
+          <div>
+            <div class="event-title"><a href="https://events.math.unipd.it/indamlanglandsschool/" target="_blank" rel="noopener noreferrer">Padova school on Serre conjectures and the p-adic Langlands program</a></div>
+            <div class="event-meta">University of Padova.</div>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">Dec 17, 2018--Jan 18, 2019</div>
+          <div>
+            <div class="event-title"><a href="https://imsarchives.nus.edu.sg/oldwww2/events/2018/lang/index.html" target="_blank" rel="noopener noreferrer">On the Langlands Program: Endoscopy and Beyond</a></div>
+            <div class="event-meta">Institute for Mathematical Sciences, National University of Singapore.</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>&copy; Linli Shi</div>
+      <div>Last updated: May 2026</div>
+    </div>
+  </footer>
 </body>
 </html>
