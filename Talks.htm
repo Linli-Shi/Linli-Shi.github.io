@@ -530,6 +530,16 @@
       .button { font-size: 0.88rem; }
     }
 
+
+    /* Updated 2026 profile: subtle spacing for long-form lists. */
+    .item-description { margin: 7px 0 0 !important; color: var(--muted); font-size: 0.94rem; }
+    .section-overview { margin-top: 18px !important; }
+    .section-action { margin-top: 15px !important; font-size: 0.94rem; }
+    .content-subheading { margin: 0 0 14px; font-size: 1.02rem; font-weight: 700; color: var(--ink); }
+    .content-subheading.next-group { margin-top: 30px; }
+    .course-date { overflow-wrap: anywhere; }
+    .event-list { overflow-wrap: anywhere; }
+    @media (max-width: 560px) { .content-subheading.next-group { margin-top: 24px; } .section-heading h2 { white-space: normal; } }
   </style>
 </head>
 <body>
@@ -566,173 +576,149 @@
     <section class="card page-card" aria-labelledby="page-heading">
       <p class="eyebrow">Talks</p>
       <h2 class="page-title" id="page-heading">Talks and academic activities</h2>
-      <p class="lead">
-        This page lists selected invited seminars, conference talks, and recent workshops connected to my research in number theory, automorphic forms, and arithmetic geometry.
-      </p>
-    </section>
-
-    <section class="card section" aria-labelledby="invited-heading">
-      <div class="section-heading">
-        <h2 id="invited-heading">Invited Seminar Talks</h2>
-      </div>
+      <p class="lead">Invited seminars, conference talks, and selected workshops in number theory, automorphic forms, and arithmetic geometry.</p>
+    </section>    <section class="card section" aria-labelledby="invited-heading">
+      <div class="section-heading"><h2 id="invited-heading">Invited seminar talks</h2></div>
       <ul class="event-list">
         <li class="event">
-          <div class="event-date">Oct 22, 2026</div>
-          <div>
-            <div class="event-title"><a href="https://wiki.math.wisc.edu/index.php/NTS_Fall_Semester_2026" target="_blank" rel="noopener noreferrer">Motivic Theta Lifting and Beilinson’s Conjectures</a></div>
-            <div class="event-meta">Number Theory / Representation Theory Seminar, University of Wisconsin--Madison. Online. </div>
+          <div class="event-date">Dec 8, 2026</div>
+          <div><div class="event-title"><a href="https://www.uni-muenster.de/Arithm/veranstaltungen/index.html" target="_blank" rel="noopener noreferrer">Motivic Theta Lifting and Beilinson’s Conjectures</a></div>
+            <div class="event-meta">Mittagsseminar zur Arithmetik, University of Münster. <strong>Scheduled.</strong></div>
           </div>
         </li>
-
-        <li class="event">
-          <div class="event-date">Oct 5, 2026</div>
-          <div>
-            <div class="event-title"><a href="https://secure.math.ucla.edu/seminars/display.php?id=839545&utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Motivic Theta Lifting and Beilinson’s Conjectures</a></div>
-            <div class="event-meta">Number Theory Seminar, UCLA.</div>
-          </div>
-        </li>
-
-        <li class="event">
-          <div class="event-date">Oct 1, 2026</div>
-          <div>
-            <div class="event-title"><a href="https://www.caltech.edu/campus-life-events/calendar/algebra-geometry-number-theory-seminar-1">Motivic Theta Lifting and Beilinson’s Conjectures</a></div>
-            <div class="event-meta">Algebra and Geometry Seminar, Caltech.</div>
-          </div>
-        </li>
-
-        <li class="event">
-          <div class="event-date">Sep 28, 2026</div>
-          <div>
-            <div class="event-title">Motivic Theta Lifting and Beilinson’s Conjectures</div>
-            <div class="event-meta">RTG Arithmetic Geometry and Number Theory Seminar, UC Berkeley.</div>
-          </div>
-        </li>
-
-        <li class="event">
-          <div class="event-date">Sep 11, 2026</div>
-          <div>
-            <div class="event-title"><a href="https://columbiaafas.github.io/" target="_blank" rel="noopener noreferrer">Motivic Theta Lifting and Beilinson’s Conjectures</a></div>
-            <div class="event-meta">Automorphic Forms and Arithmetic Seminar, Columbia University.</div>
-          </div>
-        </li>
-
-        <li class="event">
-          <div class="event-date">Jan 16, 2025</div>
-          <div>
-            <div class="event-title"><a href="https://calendar.google.com/calendar/u/0/embed?src=umn.edu_m286fu0qmtarvfgn71cl1nbdps@group.calendar.google.com&amp;ctz=America/Indiana/Indianapolis" target="_blank" rel="noopener noreferrer">Regularized periods of some Eisenstein series</a></div>
-            <div class="event-meta">Automorphic Forms and Representation Theory Seminar, Purdue University.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">Dec 3, 2024</div>
-          <div>
-            <div class="event-title"><a href="https://people.clas.ufl.edu/jeremybooher/seminar/" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
-            <div class="event-meta">Algebra Seminar, University of Florida.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">Nov 20, 2024</div>
-          <div>
-            <div class="event-title"><a href="https://mathweb.ucsd.edu/~nts/cgi-bin/nts.cgi" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
-            <div class="event-meta">Number Theory Seminar, UC San Diego.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">Nov 18, 2024</div>
-          <div>
-            <div class="event-title"><a href="https://math.bu.edu/research/algebra/seminar.html" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
-            <div class="event-meta">Number Theory Seminar, Boston University.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">Nov 5, 2024</div>
-          <div>
-            <div class="event-title"><a href="https://www.math.lsu.edu/calendar?selecttime=all_future&amp;selectevent=Algebra+and+Number+Theory+Seminar" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
-            <div class="event-meta">Algebra and Number Theory Seminar, Louisiana State University. Online.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">Oct 15, 2024</div>
-          <div>
-            <div class="event-title"><a href="https://sites.google.com/math.arizona.edu/panyan/algebra-and-number-theory-seminar" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
-            <div class="event-meta">Algebra and Number Theory Seminar, University of Arizona.</div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="card section" aria-labelledby="conference-heading">
-      <div class="section-heading">
-        <h2 id="conference-heading">Conference Talks</h2>
-      </div>
+<li class="event">
+<div class="event-date">Oct 22, 2026</div>
+<div>
+<div class="event-title"><a href="https://wiki.math.wisc.edu/index.php/NTS_Fall_Semester_2026" rel="noopener noreferrer" target="_blank">Motivic Theta Lifting and Beilinson’s Conjectures</a></div>
+<div class="event-meta">Number Theory / Representation Theory Seminar, University of Wisconsin--Madison. Online. </div>
+</div>
+</li><li class="event">
+<div class="event-date">Oct 5, 2026</div>
+<div>
+<div class="event-title"><a href="https://secure.math.ucla.edu/seminars/display.php?id=839545" rel="noopener noreferrer" target="_blank">Motivic Theta Lifting and Beilinson’s Conjectures</a></div>
+<div class="event-meta">Number Theory Seminar, UCLA.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Oct 1, 2026</div>
+<div>
+<div class="event-title"><a href="https://www.caltech.edu/campus-life-events/calendar/algebra-geometry-number-theory-seminar-1">Motivic Theta Lifting and Beilinson’s Conjectures</a></div>
+<div class="event-meta">Algebra, Geometry and Number Theory Seminar, Caltech.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Sep 28, 2026</div>
+<div>
+<div class="event-title">Motivic Theta Lifting and Beilinson’s Conjectures</div>
+<div class="event-meta">RTG Arithmetic Geometry and Number Theory Seminar, UC Berkeley.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Sep 11, 2026</div>
+<div>
+<div class="event-title"><a href="https://columbiaafas.github.io/" rel="noopener noreferrer" target="_blank">Motivic Theta Lifting and Beilinson’s Conjectures</a></div>
+<div class="event-meta">Automorphic Forms and Arithmetic Seminar, Columbia University.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Jan 16, 2025</div>
+<div>
+<div class="event-title"><a href="https://calendar.google.com/calendar/u/0/embed?src=umn.edu_m286fu0qmtarvfgn71cl1nbdps@group.calendar.google.com&amp;ctz=America/Indiana/Indianapolis" rel="noopener noreferrer" target="_blank">Regularized periods of some Eisenstein series</a></div>
+<div class="event-meta">Automorphic Forms and Representation Theory Seminar, Purdue University.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Dec 3, 2024</div>
+<div>
+<div class="event-title"><a href="https://people.clas.ufl.edu/jeremybooher/seminar/" rel="noopener noreferrer" target="_blank">On higher regulators of Picard modular surfaces</a></div>
+<div class="event-meta">Algebra Seminar, University of Florida.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Nov 20, 2024</div>
+<div>
+<div class="event-title"><a href="https://mathweb.ucsd.edu/~nts/cgi-bin/nts.cgi" rel="noopener noreferrer" target="_blank">On higher regulators of Picard modular surfaces</a></div>
+<div class="event-meta">Number Theory Seminar, UC San Diego.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Nov 18, 2024</div>
+<div>
+<div class="event-title"><a href="https://math.bu.edu/research/algebra/seminar.html" rel="noopener noreferrer" target="_blank">On higher regulators of Picard modular surfaces</a></div>
+<div class="event-meta">Number Theory Seminar, Boston University.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Nov 5, 2024</div>
+<div>
+<div class="event-title"><a href="https://www.math.lsu.edu/calendar?selecttime=all_future&amp;selectevent=Algebra+and+Number+Theory+Seminar" rel="noopener noreferrer" target="_blank">On higher regulators of Picard modular surfaces</a></div>
+<div class="event-meta">Algebra and Number Theory Seminar, Louisiana State University. Online.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Oct 15, 2024</div>
+<div>
+<div class="event-title"><a href="https://sites.google.com/math.arizona.edu/panyan/algebra-and-number-theory-seminar" rel="noopener noreferrer" target="_blank">On higher regulators of Picard modular surfaces</a></div>
+<div class="event-meta">Algebra and Number Theory Seminar, University of Arizona.</div>
+</div>
+</li>      </ul>
+    </section>    <section class="card section" aria-labelledby="conference-heading">
+      <div class="section-heading"><h2 id="conference-heading">Conference and workshop talks</h2></div>
       <ul class="event-list">
-        <li class="event">
-          <div class="event-date">June 14--19, 2026</div>
-          <div>
-            <div class="event-title"><a href="https://math.sbg.ac.at/fuchsc/A&G/Alpbach2026.html" target="_blank" rel="noopener noreferrer">Modularity in Higher Chow Groups and Beilinson's Conjectures</a></div>
-            <div class="event-meta">ETHZ-UZh-Sbg Arithmetic and Geometry Research Group, Alpbach/Tyrol, Austria.</div>
-          </div>
-        </li>
-
-        <li class="event">
-          <div class="event-date">Jan 8--11, 2025</div>
-          <div>
-            <div class="event-title"><a href="https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Paper/42800" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
-            <div class="event-meta">Special Session on ``L-functions, Automorphic Forms, and Their Applications,'' Joint Mathematics Meetings 2025, Seattle.</div>
-          </div>
-        </li>
-      </ul>
+<li class="event">
+<div class="event-date">June 14--19, 2026</div>
+<div>
+<div class="event-title"><a href="https://math.sbg.ac.at/fuchsc/A&amp;G/Alpbach2026.html" rel="noopener noreferrer" target="_blank">Modularity in Higher Chow Groups and Beilinson’s Conjecture</a></div>
+<div class="event-meta">ETHZ–UZh–Sbg Arithmetic and Geometry Research Group, Alpbach, Austria.</div>
+</div>
+</li><li class="event">
+<div class="event-date">Jan 8--11, 2025</div>
+<div>
+<div class="event-title"><a href="https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Paper/42800" rel="noopener noreferrer" target="_blank">On higher regulators of Picard modular surfaces</a></div>
+<div class="event-meta">Special Session on ``L-functions, Automorphic Forms, and Their Applications,'' Joint Mathematics Meetings 2025, Seattle.</div>
+</div>
+</li>      </ul>
     </section>
-
-    <section class="card section" aria-labelledby="workshops-heading">
-      <div class="section-heading">
-        <h2 id="workshops-heading">Selected Conferences and Workshops</h2>
-      </div>
-      <ul class="event-list">
-        <li class="event">
-          <div class="event-date">Jul 13--18, 2026</div>
-          <div>
-            <div class="event-title"><a href="https://www.nisyrosmathconference.org/" target="_blank" rel="noopener noreferrer">Conference on Euler Systems</a></div>
-            <div class="event-meta">Nisyros.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">Sep 22--26, 2025</div>
-          <div>
-            <div class="event-title"><a href="https://l-values-2025.esaga.net/" target="_blank" rel="noopener noreferrer">Motives, L-values and Eisenstein series</a></div>
-            <div class="event-meta">Regensburg.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">Jun 5--8, 2023</div>
-          <div>
-            <div class="event-title"><a href="https://www.math.cuhk.edu.hk/conference/aag2023/" target="_blank" rel="noopener noreferrer">Arithmetic Algebraic Geometry, in honor of Shouwu Zhang's 60th birthday</a></div>
-            <div class="event-meta">Chinese University of Hong Kong.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">Mar 6--10, 2023</div>
-          <div>
-            <div class="event-title"><a href="https://www.mpim-bonn.mpg.de/node/11596" target="_blank" rel="noopener noreferrer">Motives and Automorphic Forms in Honour of Günter Harder's 85th Birthday</a></div>
-            <div class="event-meta">Max Planck Institute for Mathematics, Bonn.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">May 27--Jun 14, 2019</div>
-          <div>
-            <div class="event-title"><a href="https://events.math.unipd.it/indamlanglandsschool/" target="_blank" rel="noopener noreferrer">Padova school on Serre conjectures and the p-adic Langlands program</a></div>
-            <div class="event-meta">University of Padova.</div>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-date">Dec 17, 2018--Jan 18, 2019</div>
-          <div>
-            <div class="event-title"><a href="https://imsarchives.nus.edu.sg/oldwww2/events/2018/lang/index.html" target="_blank" rel="noopener noreferrer">On the Langlands Program: Endoscopy and Beyond</a></div>
-            <div class="event-meta">Institute for Mathematical Sciences, National University of Singapore.</div>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <section aria-labelledby="workshops-heading" class="card section">
+<div class="section-heading">
+<h2 id="workshops-heading">Selected Conferences and Workshops</h2>
+</div>
+<ul class="event-list">
+<li class="event">
+<div class="event-date">Jul 13--18, 2026</div>
+<div>
+<div class="event-title"><a href="https://www.nisyrosmathconference.org/" rel="noopener noreferrer" target="_blank">Conference on Euler Systems</a></div>
+<div class="event-meta">Nisyros.</div>
+</div>
+</li>
+<li class="event">
+<div class="event-date">Sep 22--26, 2025</div>
+<div>
+<div class="event-title"><a href="https://l-values-2025.esaga.net/" rel="noopener noreferrer" target="_blank">Motives, L-values and Eisenstein series</a></div>
+<div class="event-meta">Regensburg.</div>
+</div>
+</li>
+<li class="event">
+<div class="event-date">Jun 5--8, 2023</div>
+<div>
+<div class="event-title"><a href="https://www.math.cuhk.edu.hk/conference/aag2023/" rel="noopener noreferrer" target="_blank">Arithmetic Algebraic Geometry, in honor of Shouwu Zhang's 60th birthday</a></div>
+<div class="event-meta">Chinese University of Hong Kong.</div>
+</div>
+</li>
+<li class="event">
+<div class="event-date">Mar 6--10, 2023</div>
+<div>
+<div class="event-title"><a href="https://www.mpim-bonn.mpg.de/node/11596" rel="noopener noreferrer" target="_blank">Motives and Automorphic Forms in Honour of Günter Harder's 85th Birthday</a></div>
+<div class="event-meta">Max Planck Institute for Mathematics, Bonn.</div>
+</div>
+</li>
+<li class="event">
+<div class="event-date">May 27--Jun 14, 2019</div>
+<div>
+<div class="event-title"><a href="https://events.math.unipd.it/indamlanglandsschool/" rel="noopener noreferrer" target="_blank">Padova school on Serre conjectures and the p-adic Langlands program</a></div>
+<div class="event-meta">University of Padova.</div>
+</div>
+</li>
+<li class="event">
+<div class="event-date">Dec 17, 2018--Jan 18, 2019</div>
+<div>
+<div class="event-title"><a href="https://imsarchives.nus.edu.sg/oldwww2/events/2018/lang/index.html" rel="noopener noreferrer" target="_blank">On the Langlands Program: Endoscopy and Beyond</a></div>
+<div class="event-meta">Institute for Mathematical Sciences, National University of Singapore.</div>
+</div>
+</li>
+</ul>
+</section>
   </main>
 
   <footer class="site-footer">

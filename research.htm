@@ -530,6 +530,16 @@
       .button { font-size: 0.88rem; }
     }
 
+
+    /* Updated 2026 profile: subtle spacing for long-form lists. */
+    .item-description { margin: 7px 0 0 !important; color: var(--muted); font-size: 0.94rem; }
+    .section-overview { margin-top: 18px !important; }
+    .section-action { margin-top: 15px !important; font-size: 0.94rem; }
+    .content-subheading { margin: 0 0 14px; font-size: 1.02rem; font-weight: 700; color: var(--ink); }
+    .content-subheading.next-group { margin-top: 30px; }
+    .course-date { overflow-wrap: anywhere; }
+    .event-list { overflow-wrap: anywhere; }
+    @media (max-width: 560px) { .content-subheading.next-group { margin-top: 24px; } .section-heading h2 { white-space: normal; } }
   </style>
 </head>
 <body>
@@ -566,57 +576,88 @@
     <section class="card page-card" aria-labelledby="page-heading">
       <p class="eyebrow">Research</p>
       <h2 class="page-title" id="page-heading">Research profile</h2>
-      <p class="lead">
-        My research interests include number theory, automorphic forms and arithmetic geometry.
-      </p>
-      <p>
-        More specifically, I work on the following topics and their interactions: Beilinson's conjectures, Euler systems, the Kudla program, and the relative Langlands program.
-      </p>
-    </section>
+      <p class="lead">Number theory, automorphic forms, and arithmetic geometry, with particular emphasis on Beilinson’s conjectures, Euler systems, the Kudla program, and the relative Langlands program.</p>
+      <p>My research concerns the arithmetic of automorphic forms, motivic cohomology, special <em>L</em>-values, and automorphic periods.</p>
+    </section>    <section class="card section" aria-labelledby="themes-heading">
+      <div class="section-heading"><h2 id="themes-heading">Research directions</h2></div>
+      <div class="theme-grid">
+ <div class="theme-card">
+    <h3>
+      <a href="https://math.stanford.edu/~conrad/BSDseminar/refs/BeilinsonintroII.pdf"
+         target="_blank" rel="noopener noreferrer">
+        Beilinson's Conjectures
+      </a>
+    </h3>
+  </div>
 
-    <section class="card section" aria-labelledby="themes-heading">
-      <div class="section-heading">
-        <h2 id="themes-heading">Research Themes</h2>
-      </div>
-      <div class="research-tags" aria-label="Research themes">
-        <span class="tag">Beilinson's Conjectures</span>
-        <span class="tag">Euler Systems</span>
-        <span class="tag">Kudla Program</span>
-        <span class="tag">Relative Langlands Program</span>
-      </div>
-    </section>
+  <div class="theme-card">
+    <h3>
+      <a href="https://www.math.columbia.edu/~chaoli/IHES.pdf"
+         target="_blank" rel="noopener noreferrer">
+        The Kudla Program
+      </a>
+    </h3>
+  </div>
 
-    <section class="card section" aria-labelledby="paper-heading">
-      <div class="section-heading">
-        <h2 id="paper-heading">Selected Paper</h2>
-      </div>
+  <div class="theme-card">
+    <h3>
+      <a href="https://en.wikipedia.org/wiki/Euler_system"
+         target="_blank" rel="noopener noreferrer">
+        Euler Systems
+      </a>
+    </h3>
+  </div>
+
+  <div class="theme-card">
+    <h3>
+      <a href="https://arxiv.org/abs/2509.18062"
+         target="_blank" rel="noopener noreferrer">
+        The Relative Langlands Program
+      </a>
+    </h3>
+  </div></div>
+      </section>    <section class="card section" aria-labelledby="paper-heading">
+      <div class="section-heading"><h2 id="paper-heading">Selected preprint</h2></div>
       <ul class="item-list">
         <li class="item">
           <div class="item-title"><a href="https://arxiv.org/abs/2510.08708" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></div>
-          <div class="item-meta">arXiv:2510.08708. Submitted.</div>
+          <div class="item-meta">arXiv:2510.08708 · Submitted.</div>
+          <p class="item-description">Higher regulators, interior motives, and non-critical values of automorphic L-functions.</p>
         </li>
       </ul>
-    </section>
-
-    <section class="card section" aria-labelledby="keywords-heading">
-      <div class="section-heading">
-        <h2 id="keywords-heading">Keywords</h2>
-      </div>
-      <div class="research-tags" aria-label="Research keywords">
-        <span class="tag">Number Theory</span>
-        <span class="tag">Arithmetic Geometry</span>
-        <span class="tag">Motivic Cohomology</span>
-        <span class="tag">Higher Regulators</span>
-        <span class="tag">Automorphic Forms</span>
-        <span class="tag">Automorphic&nbsp;<em>L</em>-functions</span>
-      </div>
+    </section>    <section class="card section" aria-labelledby="projects-heading">
+      <div class="section-heading"><h2 id="projects-heading">Research in preparation</h2></div>
+      <p>My current manuscripts in preparation span several related directions:</p>
+      <ul class="item-list">
+        <li class="item">
+          <div class="item-title">Adelic Borcherds lifts and Borcherds products</div>
+          <div class="item-meta">Joint with Wenxuan Qi, <a href="https://faculty.bicmr.pku.edu.cn/~lxiao/" target="_blank" rel="noopener noreferrer">Liang Xiao</a>, and <a href="https://scholar.hunnu.edu.cn/zhangyichao/index.htm" target="_blank" rel="noopener noreferrer">Yichao Zhang</a>.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">Theta lifts in higher Chow groups</div>
+          <div class="item-meta">Joint with Wenxuan Qi, <a href="https://faculty.bicmr.pku.edu.cn/~lxiao/" target="_blank" rel="noopener noreferrer">Liang Xiao</a>, and <a href="https://scholar.hunnu.edu.cn/zhangyichao/index.htm" target="_blank" rel="noopener noreferrer">Yichao Zhang</a>.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">On higher regulators of orthogonal Shimura varieties</div>
+          <div class="item-meta">Joint with Wenxuan Qi, <a href="https://faculty.bicmr.pku.edu.cn/~lxiao/" target="_blank" rel="noopener noreferrer">Liang Xiao</a>, and <a href="https://scholar.hunnu.edu.cn/zhangyichao/index.htm" target="_blank" rel="noopener noreferrer">Yichao Zhang</a>.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">On regularized linear periods</div>
+          <div class="item-meta">Joint with <a href="https://webusers.imj-prg.fr/~pierre-henri.chaudouard/" target="_blank" rel="noopener noreferrer">Pierre-Henri Chaudouard</a>.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">Higher Hida and Coleman theory on GU(2,1)</div>
+          <div class="item-meta">Joint with Zhengfu Chen.</div>
+        </li>
+      </ul>
+      <p class="section-action"><a href="papers.htm">Full papers and preprints list</a>.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div>&copy; Linli Shi</div>
-      <div>Last updated: May 2026</div>
+      <div>Last updated: October 2026</div>
     </div>
   </footer>
 </body>

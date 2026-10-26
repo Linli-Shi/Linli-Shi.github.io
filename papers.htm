@@ -530,6 +530,16 @@
       .button { font-size: 0.88rem; }
     }
 
+
+    /* Updated 2026 profile: subtle spacing for long-form lists. */
+    .item-description { margin: 7px 0 0 !important; color: var(--muted); font-size: 0.94rem; }
+    .section-overview { margin-top: 18px !important; }
+    .section-action { margin-top: 15px !important; font-size: 0.94rem; }
+    .content-subheading { margin: 0 0 14px; font-size: 1.02rem; font-weight: 700; color: var(--ink); }
+    .content-subheading.next-group { margin-top: 30px; }
+    .course-date { overflow-wrap: anywhere; }
+    .event-list { overflow-wrap: anywhere; }
+    @media (max-width: 560px) { .content-subheading.next-group { margin-top: 24px; } .section-heading h2 { white-space: normal; } }
   </style>
 </head>
 <body>
@@ -565,47 +575,53 @@
   <main class="main">
     <section class="card page-card" aria-labelledby="page-heading">
       <p class="eyebrow">Papers</p>
-      <h2 class="page-title" id="page-heading">Research papers and preprints</h2>
-      <p class="lead">
-        My research interests include number theory, automorphic forms and arithmetic geometry. This page lists papers and preprints; for a broader overview, see my <a href="research.htm">research profile</a>.
-      </p>
-    </section>
-
-    <section class="card section" aria-labelledby="preprints-heading">
-      <div class="section-heading">
-        <h2 id="preprints-heading">Preprints</h2>
-      </div>
+      <h2 class="page-title" id="page-heading">Papers and preprints</h2>
+      <p class="lead">My research focuses on the connections between automorphic forms, motivic cohomology, and special values of <em>L</em>-functions. </p>
+    </section>    <section class="card section" aria-labelledby="preprints-heading">
+      <div class="section-heading"><h2 id="preprints-heading">Preprints</h2></div>
       <article class="publication">
         <h3 class="publication-title"><a href="https://arxiv.org/abs/2510.08708" target="_blank" rel="noopener noreferrer">On higher regulators of Picard modular surfaces</a></h3>
-        <div class="publication-meta">arXiv:2510.08708. Submitted.</div>
-        <p>
-          This paper studies motivic classes on Picard modular surfaces with non-trivial coefficients. It proves that the classes constructed by Loeffler--Skinner--Zerbes lie in the motivic cohomology of interior motives, and establishes a relation with non-critical values of motivic <em>L</em>-functions associated to cuspidal automorphic representations of <span class="math">GU(2,1)</span>.
-        </p>
+        <div class="publication-meta">arXiv:2510.08708 · Submitted.</div>
+        <p>This paper studies motivic classes on Picard modular surfaces with non-trivial coefficients, their relation to interior motives, and non-critical values of motivic <em>L</em>-functions associated with cuspidal automorphic representations of GU(2,1).</p>
         <div class="tag-row" aria-label="Paper keywords">
           <span class="tag">Picard modular surfaces</span>
           <span class="tag">Motivic cohomology</span>
-          <span class="tag">Interior motives</span>
           <span class="tag">Higher regulators</span>
-          <span class="tag">Beilinson's conjectures</span>
-          <span class="tag">Automorphic&nbsp;<em>L</em>-functions</span>
+          <span class="tag">Beilinson’s conjectures</span>
         </div>
-        <details>
-          <summary>Abstract</summary>
-          <p>
-            We prove that the motivic classes in the motivic cohomology groups of Picard modular surfaces with non-trivial coefficients constructed in work of Loeffler--Skinner--Zerbes lie in the motivic cohomology groups of the interior motives. We then establish a relation between these classes and non-critical values of motivic <em>L</em>-functions associated to cuspidal automorphic representations of <span class="math">GU(2,1)</span>, deducing non-triviality of the classes and providing evidence for Beilinson's conjectures.
-          </p>
-        </details>
-        <p class="note-box">
-          Related reference: <a href="https://arxiv.org/abs/2010.10946" target="_blank" rel="noopener noreferrer">Loeffler--Skinner--Zerbes, <em>An Euler system for <span class="math">GU(2,1)</span></em></a>.
-        </p>
+        <details><summary>Abstract</summary><p>We prove that the motivic classes in the motivic cohomology groups of Picard modular surfaces with non-trivial coefficients constructed in work of Loeffler–Skinner–Zerbes lie in the motivic cohomology groups of the interior motives. We then establish a relation between these classes and non-critical values of motivic <em>L</em>-functions associated to cuspidal automorphic representations of GU(2,1), deducing non-triviality of the classes and providing evidence for Beilinson’s conjectures.</p></details>
       </article>
+    </section>    <section class="card section" aria-labelledby="preparation-heading">
+      <div class="section-heading"><h2 id="preparation-heading">In preparation</h2></div>
+      <ul class="item-list">
+        <li class="item">
+          <div class="item-title">Adelic Borcherds lifts and Borcherds products</div>
+          <div class="item-meta">Joint with Wenxuan Qi, <a href="https://faculty.bicmr.pku.edu.cn/~lxiao/" target="_blank" rel="noopener noreferrer">Liang Xiao</a>, and <a href="https://scholar.hunnu.edu.cn/zhangyichao/index.htm" target="_blank" rel="noopener noreferrer">Yichao Zhang</a>.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">Theta lifts in higher Chow groups</div>
+          <div class="item-meta">Joint with Wenxuan Qi, <a href="https://faculty.bicmr.pku.edu.cn/~lxiao/" target="_blank" rel="noopener noreferrer">Liang Xiao</a>, and <a href="https://scholar.hunnu.edu.cn/zhangyichao/index.htm" target="_blank" rel="noopener noreferrer">Yichao Zhang</a>.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">On higher regulators of orthogonal Shimura varieties</div>
+          <div class="item-meta">Joint with Wenxuan Qi, <a href="https://faculty.bicmr.pku.edu.cn/~lxiao/" target="_blank" rel="noopener noreferrer">Liang Xiao</a>, and <a href="https://scholar.hunnu.edu.cn/zhangyichao/index.htm" target="_blank" rel="noopener noreferrer">Yichao Zhang</a>.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">On regularized linear periods</div>
+          <div class="item-meta">Joint with <a href="https://webusers.imj-prg.fr/~pierre-henri.chaudouard/" target="_blank" rel="noopener noreferrer">Pierre-Henri Chaudouard</a>.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">Higher Hida and Coleman theory on GU(2,1)</div>
+          <div class="item-meta">Joint with Zhengfu Chen.</div>
+        </li>
+      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div>&copy; Linli Shi</div>
-      <div>Last updated: May 2026</div>
+      <div>Last updated: October 2026</div>
     </div>
   </footer>
 </body>

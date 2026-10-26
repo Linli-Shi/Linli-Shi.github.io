@@ -530,6 +530,16 @@
       .button { font-size: 0.88rem; }
     }
 
+
+    /* Updated 2026 profile: subtle spacing for long-form lists. */
+    .item-description { margin: 7px 0 0 !important; color: var(--muted); font-size: 0.94rem; }
+    .section-overview { margin-top: 18px !important; }
+    .section-action { margin-top: 15px !important; font-size: 0.94rem; }
+    .content-subheading { margin: 0 0 14px; font-size: 1.02rem; font-weight: 700; color: var(--ink); }
+    .content-subheading.next-group { margin-top: 30px; }
+    .course-date { overflow-wrap: anywhere; }
+    .event-list { overflow-wrap: anywhere; }
+    @media (max-width: 560px) { .content-subheading.next-group { margin-top: 24px; } .section-heading h2 { white-space: normal; } }
   </style>
 </head>
 <body>
@@ -566,81 +576,112 @@
     <section class="card page-card" aria-labelledby="page-heading">
       <p class="eyebrow">Teaching</p>
       <h2 class="page-title" id="page-heading">Teaching and mentoring</h2>
-      <p class="lead">
-        My teaching experience includes undergraduate mathematics instruction in the U.S. system, online teaching assistance, advanced summer-school teaching assistance, and thesis mentoring.
-      </p>
-      <p>
-        At the University of Connecticut, I served as a teaching assistant for Mathematics for Business and Economics, Multivariable Calculus, and Calculus II. I have also assisted Linear Algebra I and Number Theory at UniDistance Suisse and advanced courses in algebraic geometry, algebraic number theory, and representation theory.
-      </p>
-    </section>
-
-    <section class="card section" aria-labelledby="courses-heading">
-      <div class="section-heading">
-        <h2 id="courses-heading">Course Teaching</h2>
-      </div>
+      <p class="lead">My experience includes undergraduate instruction and recitation sections at the University of Connecticut, online recitation instruction at UniDistance Suisse, and thesis mentoring at ETH Zürich.</p>
+      <p>At ETH Zürich, I co-supervise master’s theses with Sarah Zerbes.</p>
+    </section>    <section class="card section" aria-labelledby="courses-heading">
+      <div class="section-heading"><h2 id="courses-heading">Course teaching</h2></div>
+      <h3 class="content-subheading">UniDistance Suisse</h3>
       <ul class="course-list">
         <li class="course-row">
-          <div class="course-date">2019--2025</div>
-          <div>
-            <div class="course-title">Mathematics for Business and Economics; Multivariable Calculus; Calculus II</div>
-            <div class="course-meta">Teaching Assistant, University of Connecticut.</div>
+          <div class="course-date">Fall 2026</div>
+          <div><div class="course-title">Number Theory</div>
+            <div class="course-meta">Recitation Instructor (Teaching Assistant) · Online.</div>
           </div>
         </li>
         <li class="course-row">
-          <div class="course-date">2025--2026</div>
-          <div>
-            <div class="course-title">Linear Algebra I (Online)</div>
-            <div class="course-meta">Teaching Assistant, UniDistance Suisse.</div>
+          <div class="course-date">Spring 2026</div>
+          <div><div class="course-title">Linear Algebra I</div>
+            <div class="course-meta">Recitation Instructor (Teaching Assistant) · Online.</div>
           </div>
         </li>
-        <li class="course-row">
-          <div class="course-date">2026--2027</div>
-          <div>
-            <div class="course-title">Number Theory (Online)</div>
-            <div class="course-meta">Teaching Assistant, UniDistance Suisse.</div>
-          </div>
-        </li>
-
       </ul>
-    </section>
-
-    <section class="card section" aria-labelledby="advanced-heading">
-      <div class="section-heading">
-        <h2 id="advanced-heading">Advanced Teaching Assistance</h2>
-      </div>
+      <h3 class="content-subheading next-group">University of Connecticut</h3>
+      <ul class="course-list">
+        <li class="course-row">
+          <div class="course-date">Spring 2025</div>
+          <div>
+            <div class="course-title">Mathematics for Business and Economics</div>
+            <div class="course-meta">Teaching Assistant.</div>
+          </div>
+        </li>
+        <li class="course-row">
+          <div class="course-date">Fall 2024</div>
+          <div>
+            <div class="course-title">Mathematics for Business and Economics</div>
+            <div class="course-meta">Teaching Assistant.</div>
+          </div>
+        </li>
+        <li class="course-row">
+          <div class="course-date">Spring 2023</div>
+          <div>
+            <div class="course-title">Mathematics for Business and Economics</div>
+            <div class="course-meta">Teaching Assistant.</div>
+          </div>
+        </li>
+        <li class="course-row">
+          <div class="course-date">Fall 2022</div>
+          <div>
+            <div class="course-title">Mathematics for Business and Economics</div>
+            <div class="course-meta">Teaching Assistant.</div>
+          </div>
+        </li>
+        <li class="course-row">
+          <div class="course-date">Spring 2022</div>
+          <div>
+            <div class="course-title">Multivariable Calculus</div>
+            <div class="course-meta">Teaching Assistant · Recitation sections.</div>
+          </div>
+        </li>
+        <li class="course-row">
+          <div class="course-date">Fall 2021</div>
+          <div>
+            <div class="course-title">Multivariable Calculus</div>
+            <div class="course-meta">Teaching Assistant · Recitation sections.</div>
+          </div>
+        </li>
+        <li class="course-row">
+          <div class="course-date">Spring 2020</div>
+          <div>
+            <div class="course-title">Multivariable Calculus</div>
+            <div class="course-meta">Teaching Assistant · Recitation sections.</div>
+          </div>
+        </li>
+        <li class="course-row">
+          <div class="course-date">Fall 2019</div>
+          <div>
+            <div class="course-title">Calculus II</div>
+            <div class="course-meta">Teaching Assistant.</div>
+          </div>
+        </li>
+      </ul>
+    </section>    <section class="card section" aria-labelledby="mentoring-heading">
+      <div class="section-heading"><h2 id="mentoring-heading">Mentoring at ETH Zürich</h2></div>
+      <p>Master’s theses co-supervised with <a href="https://people.math.ethz.ch/~zerbess/" target="_blank" rel="noopener noreferrer">Sarah Zerbes</a>.</p>
+      <ul class="item-list">
+        <li class="item">
+          <div class="item-title">Helena Busenhart and Felix Stäheli</div>
+          <div class="item-meta">Master’s theses · Fall 2026.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">Leon Dahlmeier</div>
+          <div class="item-meta">Master’s thesis · Spring 2026.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">An Khanh Dao</div>
+          <div class="item-meta">Master’s thesis · Fall 2025.</div>
+        </li>
+        <li class="item">
+          <div class="item-title">Felix Stäheli</div>
+          <div class="item-meta">Semester thesis · Spring 2026.</div>
+        </li>
+      </ul>
+    </section>    <section class="card section" aria-labelledby="advanced-heading">
+      <div class="section-heading"><h2 id="advanced-heading">Additional teaching assistance</h2></div>
       <ul class="item-list">
         <li class="item">
           <div class="item-title">Summer School of Algebra and Number Theory, Chinese Academy of Sciences</div>
-          <div class="item-meta">Teaching assistant for algebraic geometry, algebraic number theory, and representation theory, Summer 2023.</div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="card section" aria-labelledby="mentoring-heading">
-      <div class="section-heading">
-        <h2 id="mentoring-heading">Mentoring</h2>
-      </div>
-      <ul class="item-list">
-        <li class="item">
-          <div class="item-title">Helena Busenhart, Master's thesis, ETH Zürich</div>
-          <div class="item-meta">Co-supervised with Prof. Sarah Zerbes, Fall 2026.</div>
-        </li>
-
-        <li class="item">
-          <div class="item-title">Felix Stäheli, Master's thesis, ETH Zürich</div>
-          <div class="item-meta">Co-supervised with Prof. Sarah Zerbes, Fall 2026.</div>
-        </li>
-        <li class="item">
-          <div class="item-title">Leon Dahlmeier, Master's thesis, ETH Zürich</div>
-          <div class="item-meta">Co-supervised with Prof. Sarah Zerbes, Spring 2026.</div>
-        </li>
-        <li class="item">
-          <div class="item-title">Felix Stäheli, Semester thesis, ETH Zürich</div>
-          <div class="item-meta">Spring 2026.</div>
-        </li>
-        <li class="item">
-          <div class="item-title">An Khanh Dao, Master's thesis, ETH Zürich</div>
-          <div class="item-meta">Co-supervised with Prof. Sarah Zerbes, Fall 2025.</div>
+          <div class="item-meta">Summer 2023.</div>
+          <p class="item-description">Teaching assistant for algebraic geometry, algebraic number theory, and representation theory.</p>
         </li>
       </ul>
     </section>
@@ -649,7 +690,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div>&copy; Linli Shi</div>
-      <div>Last updated: September 2026</div>
+      <div>Last updated: October 2026</div>
     </div>
   </footer>
 </body>
